@@ -27,8 +27,11 @@ export class Sidebar extends Component {
     });
   }
 
+ 
+  
   render() {
-    const { tabs, isCollapsed } = this.state;
+    let { tabs, isCollapsed } = this.state;
+    
     return (
       <nav
         className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
@@ -82,10 +85,9 @@ export class Sidebar extends Component {
             })}
           </Scrollspy>
         </div>
-        <Modal/>
-        <p className="navbar-text">
-          Want to build your own resume site? check the source <a href="https://github.com/chsclarke/gatsby-js-portfolio-site">here</a>
-        </p>
+        <div className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`}>
+            <Modal/>
+        </div>
       </nav>
     );
   }

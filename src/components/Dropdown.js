@@ -55,7 +55,6 @@ export default function SimpleSelect() {
             Export
         </Button>
       </Box>
-        {/* <FormHelperText>Select filetype</FormHelperText> */}
       </FormControl>
     </div>
   );
