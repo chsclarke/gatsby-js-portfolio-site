@@ -1,10 +1,15 @@
 import React from 'react';
 import config from '../../../config';
 import Slide from '@material-ui/core/Slide';
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
 
 export default function About() {
-    return (
 
+    return (
+      <div>
         <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="about"
@@ -45,5 +50,6 @@ export default function About() {
           </Slide>
         </div>
       </section>
+      </div>
     );
 }

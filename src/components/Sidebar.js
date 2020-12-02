@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
-
+import ListItem from '@material-ui/core/ListItem';
+import Modal from './Modal'
+import Dropdown from './Dropdown'
 import avatar from '../assets/images/chase.jpeg';
 import config from '../../config';
 
@@ -71,7 +73,7 @@ export class Sidebar extends Component {
               return (
                 <li className="nav-item" key={href}>
                   <Scroll type="id" element={href}>
-                    <a className="nav-link" href={`#${href}`}>
+                    <a className="nav-link" href={`#${href}`}>                    
                       {content}
                     </a>
                   </Scroll>
@@ -80,6 +82,10 @@ export class Sidebar extends Component {
             })}
           </Scrollspy>
         </div>
+        <Modal/>
+        <p className="navbar-text">
+          Want to build your own resume site? check the source <a href="https://github.com/chsclarke/gatsby-js-portfolio-site">here</a>
+        </p>
       </nav>
     );
   }
