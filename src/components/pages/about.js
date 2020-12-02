@@ -23,7 +23,7 @@ export default function About() {
             <div>
           <p className="lead mb-5">
             I love runnning, camping, hiking–anything outdoors. Big fan of videogames when I'm indoors. I think good relationships are more important than anything else.
-            To describe my work style in three sentances: I am passionate about my work. I am a great communicator. I love to learn new things. 
+            To describe my work style in three sentences: I am passionate about my work. I am a great communicator. I love to learn new things. 
           </p>
           <p className="lead mb-5">
           Keep reading to learn a little more about me.

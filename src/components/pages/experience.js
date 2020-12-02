@@ -172,7 +172,7 @@ export default function Experience() {
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot>
-          <WorkOutlineIcon />
+          <SchoolIcon />
         </TimelineDot>
         {/* <TimelineConnector /> */}
         </TimelineSeparator>
