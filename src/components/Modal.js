@@ -61,7 +61,7 @@ export default function SimpleModal() {
   return (
     <div>
       <Button className={classes.exportButton} onClick={handleOpen}>
-        Resume <i style={{marginLeft: '0.6rem'}} class="fas fa-arrow-alt-circle-down"></i>
+        Resume <i style={{marginLeft: '0.6rem'}} className="fas fa-arrow-alt-circle-down"></i>
       </Button>
       <Modal
         open={open}

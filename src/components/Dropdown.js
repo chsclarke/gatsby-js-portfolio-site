@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Redirect } from 'react-router-dom'
+import { Route, Redirect } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -10,63 +10,49 @@ import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import '../assets/sass/resume.scss';
 
-const useStyles = makeStyles((theme) => ({
-  formControl: {
-    // margin: theme.spacing(1),
-    minWidth: 120,
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
-  },
-  exportButton: { 
-    background: "#495057",
-    color: "#fff",
-    textalign: "center",
-    '&:hover': {
-        background: "#bd5d38",
-    },
-    outline: "none",
-  },
-}));
+class Dropdown extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { MenuVal: '' };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
 
-let filetype;
+    handleChange(event) {
+        this.setState({MenuVal: event.target.value});
+        console.log(this.state.MenuVal)
+    }
 
-const handleClick = event => {
-    filetype = event.currentTarget.dataset;
-}
+    handleSubmit(event) {
+        alert('ChaseClarkeResume'+this.state.MenuVal);
+        event.preventDefault();
+        // return (<Button download href={this.state.MenuVal}/>)
+    }
+  
+    render() {
+        console.log(this.state.MenuVal)
 
-const submit = () => {
-    
-}
-
-export default function SimpleSelect() {
-  const classes = useStyles();
-  const [age, setAge] = React.useState('');
-
-  const handleChange = (event) => {
-    setAge(event.target.value);
-  };
-
-  return (
-    <div>
-      <FormControl className={classes.formControl}>
-        <InputLabel id="demo-simple-select-label">filetype</InputLabel>
-        <Select
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={age}
-          onChange={handleChange}
-        >
-          <MenuItem value={10} onClick={handleClick}>.pdf</MenuItem>
-          <MenuItem value={20} onClick={handleClick}>.docx</MenuItem>
-          <MenuItem value={30} onClick={handleClick}>.txt</MenuItem>
-        </Select>
-        <Box mt="2rem">
-        <Button onClick={submit} className={classes.exportButton}>
-            Export
-        </Button>
-      </Box>
-      </FormControl>
-    </div>
-  );
-}
+        return (
+            <div>
+                <form onSubmit={this.handleSubmit}>
+                    <InputLabel id="demo-simple-select-label">filetype</InputLabel>
+                    <Select
+                    labelId="demo-simple-select-label"
+                    id="demo-simple-select"
+                    value={this.state.value}
+                    onChange={this.handleChange}
+                    >
+                        <MenuItem value={'.pdf'} >.pdf</MenuItem>
+                        <MenuItem value={'.docx'} >.docx</MenuItem>
+                        <MenuItem value={'.txt'} >.txt</MenuItem>
+                    </Select>
+                    <Box mt="2rem">
+                        <input type="submit" value="Submit"/>
+                    </Box>
+                </form>
+            </div>
+        );
+    }
+  }
+  
+  export default Dropdown;

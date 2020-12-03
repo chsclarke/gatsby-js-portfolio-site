@@ -12,7 +12,7 @@ module.exports = {
     `gatsby-plugin-styled-components`,
   ],
   
-  siteTitle: 'Chase Clarke', // <title>
+  siteTitle: 'About Chase Clarke', // <title>
   manifestName: 'Resume',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
