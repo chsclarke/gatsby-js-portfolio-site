@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Button from '@material-ui/core/Button';
-import Box from '@material-ui/core/Box';
 import Dropdown from './Dropdown'
 
 
@@ -31,10 +30,10 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     textalign: "center",
     '&:hover': {
-        background: "#868e96",
+        background: "#bd5d38",
     }
   },
-  outline: "none",
+  
 }));
 
 export default function SimpleModal() {
@@ -61,15 +60,9 @@ export default function SimpleModal() {
 
   return (
     <div>
-      <Box mt="2rem">
-        <Button className={classes.exportButton} onClick={handleOpen}>
-          Export Resume
-        </Button>
-        <br/>
-        <p className="navbar-text">
-                Want to build your own resume site? check the source <a href="https://github.com/chsclarke/gatsby-js-portfolio-site">here</a>
-        </p>
-      </Box>
+      <Button className={classes.exportButton} onClick={handleOpen}>
+        Resume <i style={{marginLeft: '0.6rem'}} class="fas fa-arrow-alt-circle-down"></i>
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}

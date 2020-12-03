@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
-import ListItem from '@material-ui/core/ListItem';
-import Modal from './Modal'
-import Dropdown from './Dropdown'
 import avatar from '../assets/images/chase.jpeg';
 import config from '../../config';
 
@@ -84,9 +81,6 @@ export class Sidebar extends Component {
               );
             })}
           </Scrollspy>
-        </div>
-        <div className={`collapse navbar-collapse ${isCollapsed ? '' : 'show'}`}>
-            <Modal/>
         </div>
       </nav>
     );

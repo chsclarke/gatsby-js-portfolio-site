@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function Skills() {
     return (
+      <div>
         <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
         id="skills"
@@ -60,6 +61,8 @@ export default function Skills() {
             </li>
           </ul>
         </div>
+        
       </section>
+    </div>
     );
 }

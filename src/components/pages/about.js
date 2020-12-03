@@ -5,7 +5,8 @@ import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
+import Modal from '../Modal'
+import { Box } from '@material-ui/core';
 export default function About() {
 
     return (
@@ -46,8 +47,17 @@ export default function About() {
                 </a>
               );
             })}
-          </div>
+          <Box mt="2rem">
+           <Modal/>
+          </Box>   
+          </div>       
           </Slide>
+          <Box mt="3rem">
+          <Slide in={true} timeout={900} direction="right">
+          <div>
+        </div>
+        </Slide>
+        </Box>
         </div>
       </section>
       </div>

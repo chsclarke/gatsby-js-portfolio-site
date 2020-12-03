@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     textalign: "center",
     '&:hover': {
-        background: "#868e96",
+        background: "#bd5d38",
     },
     outline: "none",
   },
