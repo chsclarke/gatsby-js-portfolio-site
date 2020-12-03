@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Redirect } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -28,6 +29,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+let filetype;
+
+const handleClick = event => {
+    filetype = event.currentTarget.dataset;
+}
+
+const submit = () => {
+    
+}
+
 export default function SimpleSelect() {
   const classes = useStyles();
   const [age, setAge] = React.useState('');
@@ -46,12 +57,12 @@ export default function SimpleSelect() {
           value={age}
           onChange={handleChange}
         >
-          <MenuItem value={10}>.pdf</MenuItem>
-          <MenuItem value={20}>.docx</MenuItem>
-          <MenuItem value={30}>.txt</MenuItem>
+          <MenuItem value={10} onClick={handleClick}>.pdf</MenuItem>
+          <MenuItem value={20} onClick={handleClick}>.docx</MenuItem>
+          <MenuItem value={30} onClick={handleClick}>.txt</MenuItem>
         </Select>
         <Box mt="2rem">
-        <Button className={classes.exportButton}>
+        <Button onClick={submit} className={classes.exportButton}>
             Export
         </Button>
       </Box>
