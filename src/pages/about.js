@@ -1,14 +1,10 @@
 import React from 'react';
-import config from '../../../config';
+import config from '../../config';
 import Slide from '@material-ui/core/Slide';
-import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import Grid from '@material-ui/core/Grid';
-import Modal from '../Modal'
+import Modal from '../components/Modal'
 import { Box } from '@material-ui/core';
-export default function About() {
 
+export default function About() {
     return (
       <div>
         <section
@@ -28,8 +24,7 @@ export default function About() {
             </div>
             <div>
           <p className="lead mb-5">
-            I love runnning, camping, hiking–anything outdoors. Big fan of videogames when I'm indoors. I think good relationships are more important than anything else.
-            To describe my work style in three sentences: I am passionate about my work. I am a great communicator. I love to learn new things. 
+          {config.biography}
           </p>
           <p className="lead mb-5">
           Keep reading to learn a little more about me.

@@ -1,10 +1,9 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
-import Experience from '../components/pages/experience'
-import About from  '../components/pages/about'
-// import Education from  '../components/pages/education'
-import Skills from '../components/pages/skills'
+import Experience from './experience'
+import About from  './about'
+import Skills from './skills'
 
 const IndexPage = () => (
   <Layout>
@@ -14,8 +13,6 @@ const IndexPage = () => (
         <hr className="m-0" />
         <Experience/>
         <hr className="m-0" />
-        {/* <Education/>
-        <hr className="m-0" /> */}
         <Skills/>
       </div>
   </Layout>

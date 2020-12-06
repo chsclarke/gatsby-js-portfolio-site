@@ -7,3 +7,5 @@
 //         </GoogleReCaptchaProvider>
 //     )
 // }
+
+// for installing reCAPTCHA. Had to decide agsint it because it requires server side validation. Does not make sense with a static website.
