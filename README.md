@@ -2,7 +2,7 @@
 
 This repo is meant to be a quick, **free**, and easy to deploy resume website builder. The webiste is fully built, configred, and ready to be deployed. All **you** have to do is edit the config.js file to see this site become your own.
 
-See a live demo of my webiste [here](chaseclarke.com)
+See a live demo of this code [here](https://www.chaseclarke.com)
 
 ## Installation
 
@@ -32,4 +32,4 @@ Congrats! This is the beginning of your very first Gatsby resume site! 🎉
 
 ## Customization
 
-All of the content on this website is controlled by config.js. You can edit anything and everything here.
+All of the content on this website is controlled by [config.js](). You can edit anything and everything here.
