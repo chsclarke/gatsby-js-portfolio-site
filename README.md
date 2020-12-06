@@ -34,9 +34,22 @@ Congrats! This is the beginning of your very first Gatsby resume site! 🎉
 
 All of the content on this website is controlled by [config.js](https://github.com/chsclarke/gatsby-js-portfolio-site/blob/master/config.js). You can edit anything and everything there.
 
-...
+Please add your own resume to `/static`. 
+
+Ensure they are named as follows:
+
+```javascript
+config.firstname + config.lastname + ".pdf"
+```
+
+```javascript
+config.firstname + config.lastname + ".txt"
+```
+
+```javascript
+config.firstname + config.lastname + ".docx"
+```
 
 ## Deployment
 
 TODO
-
