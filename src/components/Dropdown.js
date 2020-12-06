@@ -5,6 +5,7 @@ import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
 import '../assets/sass/resume.scss';
+import config from '../../config';
 
 class Dropdown extends React.Component {
     constructor(props) {
@@ -46,14 +47,14 @@ class Dropdown extends React.Component {
                                 background: "#495057",
                                 color: "#fff",
                                 textalign: "center",
-                                'Button:hover': {
+                                hover: {
                                     color: "#fff",
                                     background: "#bd5d38",
                                 }
                                   
                             }}
                             download 
-                            href={'ChaseClarkeResume' + this.state.MenuVal}
+                            href={config.firstName + config.lastName + 'Resume' + this.state.MenuVal}
                             >Export</Button>
                     </Box>
                 </form>

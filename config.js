@@ -10,6 +10,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/apple-touch-icon.png',
+  avatar: "/chase-clarke.jpeg",               // put your photo in /static and rename here
 
   // ========================================
   // ========== About Me Section ============
