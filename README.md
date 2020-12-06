@@ -32,4 +32,11 @@ Congrats! This is the beginning of your very first Gatsby resume site! 🎉
 
 ## Customization
 
-All of the content on this website is controlled by [config.js](). You can edit anything and everything here.
+All of the content on this website is controlled by [config.js](https://github.com/chsclarke/gatsby-js-portfolio-site/blob/master/config.js). You can edit anything and everything there.
+
+...
+
+## Deployment
+
+TODO
+
