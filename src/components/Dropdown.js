@@ -13,7 +13,7 @@ import '../assets/sass/resume.scss';
 class Dropdown extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { MenuVal: '' };
+        this.state = { MenuVal: '.pdf' };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -30,24 +30,35 @@ class Dropdown extends React.Component {
     }
   
     render() {
-        console.log(this.state.MenuVal)
-
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <InputLabel id="demo-simple-select-label">filetype</InputLabel>
-                    <Select
-                    labelId="demo-simple-select-label"
-                    id="demo-simple-select"
-                    value={this.state.value}
-                    onChange={this.handleChange}
+                    <Select style={{width: "5em"}}
+                        labelId="demo-simple-select-label"
+                        id="demo-simple-select"
+                        value={this.state.value}
+                        onChange={this.handleChange}
                     >
                         <MenuItem value={'.pdf'} >.pdf</MenuItem>
                         <MenuItem value={'.docx'} >.docx</MenuItem>
                         <MenuItem value={'.txt'} >.txt</MenuItem>
                     </Select>
                     <Box mt="2rem">
-                        <input type="submit" value="Submit"/>
+                        <Button 
+                            style={{
+                                background: "#495057",
+                                color: "#fff",
+                                textalign: "center",
+                                'Button:hover': {
+                                    color: "#fff",
+                                    background: "#bd5d38",
+                                }
+                                  
+                            }}
+                            download 
+                            href={'ChaseClarkeResume' + this.state.MenuVal}
+                            >Export</Button>
                     </Box>
                 </form>
             </div>

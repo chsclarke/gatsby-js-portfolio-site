@@ -1,17 +1,5 @@
 
 module.exports = {
-  plugins: [
-    {
-      resolve: `gatsby-plugin-material-ui`,
-      options: {
-        stylesProvider: {
-          injectFirst: true,
-        },
-      },
-    },
-    `gatsby-plugin-styled-components`,
-  ],
-  
   siteTitle: 'About Chase Clarke', // <title>
   manifestName: 'Resume',
   manifestShortName: 'Landing', // max 12 characters
@@ -23,6 +11,7 @@ module.exports = {
   pathPrefix: `/gatsby-starter-resume/`, // This path is subpath of your hosting https://domain/portfolio
   firstName: 'Chase',
   lastName: 'Clarke',
+  
   // social
   socialLinks: [
     {
@@ -42,6 +31,7 @@ module.exports = {
     },
   ],
   email: 'me@chaseclarke.com',
+  
   // phone: '847-609-8426',
   address: 'San Franciso, CA',
 };
