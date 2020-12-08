@@ -54,7 +54,7 @@ class Dropdown extends React.Component {
                                   
                             }}
                             download 
-                            href={config.firstName + config.lastName + 'Resume' + this.state.MenuVal}
+                            href={config.resumeFormat + this.state.MenuVal}
                             >Export</Button>
                     </Box>
                 </form>

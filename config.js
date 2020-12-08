@@ -11,6 +11,7 @@ module.exports = {
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/apple-touch-icon.png',
   avatar: "/chase-clarke.jpeg",               // put your photo in /static and rename here
+  resumeFormat: "ChaseClarkeResume", //.pdf, .txt, .docx | put your resumes in /static and rename here
 
   // ========================================
   // ========== About Me Section ============
