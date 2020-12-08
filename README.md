@@ -36,11 +36,13 @@ All of the content on this website is controlled by [config.js](https://github.c
 
 Please add your own resumes and avatar photo to `/static`. Update the filenames in `config.js`.
 
+To modify the colors of the site, go to `src/assets/sass/_variables.scss.` I will add this to config.js soon.
+
 A great resource to build your resume in all theses filetypes is www.resume.io. You can do a $2 free trial.
 
 ## Deployment
 
-You will want to purchase a domain for this step. I reccomend the format firstname + lastname + .com OR firstname + middle inital + lastname + .com OR some variant.
+You will want to purchase a domain for this step. I reccomend the format firstname + lastname + .com OR firstname + middle inital + lastname + .com OR some variant. I used domains.google to purchase it.
 
 I used [netlify](https://www.netlify.com/) to host my site. Its incredibly fast and easy, and the hosting free tier is more than sufficient for a personal site.
 
