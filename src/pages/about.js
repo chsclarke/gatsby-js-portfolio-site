@@ -44,6 +44,7 @@ export default function About() {
               );
             })}
           <Box mt="2rem">
+            <br/>
            <Modal/>
           </Box>   
           </div>       
