@@ -63,9 +63,6 @@ module.exports = {
           paragraph: `• Working on the Partner Products to redesign and maintain a command-line based CI/CD pipeline for key partners to edit and build redacted versions of VMware's Hypervisor code.`
         },
         {
-          paragraph: `• Notable work includes authentication and authorization of users with SSO, build queuing system, various feature upgrades.`
-        },
-        {
           paragraph: `• Technology used to complete the project includes Golang, Python, Bash, Docker, Nginx, HTTPS, SAML2, Linux.`
         },
       ],
