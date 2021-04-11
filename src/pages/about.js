@@ -3,6 +3,7 @@ import config from '../../config';
 import Slide from '@material-ui/core/Slide';
 import Modal from '../components/Modal'
 import { Box } from '@material-ui/core';
+import { Link } from "gatsby"
 
 export default function About() {
     return (
@@ -27,7 +28,7 @@ export default function About() {
           {config.biography}
           </p>
           <p className="lead mb-5">
-          Keep reading to learn a little more about me.
+          This site is built as a service. Source <Link to="https://github.com/chsclarke/gatsby-js-portfolio-site">here</Link>.
           </p>
           </div>
           </div>

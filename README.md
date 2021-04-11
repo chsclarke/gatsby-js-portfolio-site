@@ -8,6 +8,8 @@ See a live demo of this code [here](https://www.chaseclarke.com)
 
 Install Node/npm [here](https://www.npmjs.com/get-npm) if you do not have it on your machine.
 
+Use node@12 tested and confiremed as compatible. Node@15 confirmed not compatible.
+
 The Gatsby CLI is available via npm and should be installed globally by running:
 
 `$ npm install -g gatsby-cli`

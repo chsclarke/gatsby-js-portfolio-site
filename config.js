@@ -40,7 +40,7 @@ module.exports = {
     {
       icon: 'fa-linkedin-in',
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/chase-clarke-10b1a1119/',
+      url: 'https://www.linkedin.com/in/chase-clarke/',
     },
     {
       icon: 'fas fa-envelope',
@@ -60,7 +60,7 @@ module.exports = {
       bioShort: 'VMware',
       bioLong: [
         {
-          paragraph: `• Working on the Partner Products team to enable a command-line based CI/CD pipeline for key partners to edit and build redacted versions of VMware's ESX code.`
+          paragraph: `• Working on the Partner Products to redesign and maintain a command-line based CI/CD pipeline for key partners to edit and build redacted versions of VMware's Hypervisor code.`
         },
         {
           paragraph: `• Notable work includes authentication and authorization of users with SSO, build queuing system, various feature upgrades.`
@@ -174,9 +174,6 @@ module.exports = {
   skillsNoIcon: `Golang, Bash, Nginx, HTTPS, SAML2, Computer Networking, Kubernetes, Knative, Azure, Visual Studio, C Sharp`,
 
   workflow: [
-    {
-      paragraph: 'Test Driven Development'
-    },
     {
       paragraph: 'Scrum & Kanban Planning'
     },
