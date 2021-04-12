@@ -60,7 +60,7 @@ module.exports = {
       bioShort: 'VMware',
       bioLong: [
         {
-          paragraph: `• Working on the Partner Products to redesign and maintain a command-line based CI/CD pipeline for key partners to edit and build redacted versions of VMware's Hypervisor code.`
+          paragraph: `• Working on the Partner Products team to redesign and maintain a command-line based CI/CD pipeline for key partners to edit and build redacted versions of VMware's Hypervisor code.`
         },
         {
           paragraph: `• Technology used to complete the project includes Golang, Python, Bash, Docker, Nginx, HTTPS, SAML2, Linux.`
