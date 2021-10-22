@@ -1,11 +1,7 @@
-// import React from 'react'
-// import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
-// export const wrapRootElement = ({ element }) => {
-//     return (
-//         <GoogleReCaptchaProvider reCaptchaKey="6LdAlvoZAAAAAHPxRJTV-MCy_qMoJYhBjovbpOIk">
-//             {element}
-//         </GoogleReCaptchaProvider>
-//     )
-// }
+/**
+ * Implement Gatsby's Browser APIs in this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/browser-apis/
+ */
 
-// for installing reCAPTCHA. Had to decide agsint it because it requires server side validation. Does not make sense with a static website.
+// You can delete this file if you're not using it

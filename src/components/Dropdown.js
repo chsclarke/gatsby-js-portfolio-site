@@ -30,17 +30,6 @@ class Dropdown extends React.Component {
         return (
             <div>
                 <form onSubmit={this.handleSubmit}>
-                    <InputLabel id="demo-simple-select-label">filetype</InputLabel>
-                    <Select style={{width: "5em"}}
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={this.state.value}
-                        onChange={this.handleChange}
-                    >
-                        <MenuItem value={'.pdf'} >.pdf</MenuItem>
-                        <MenuItem value={'.docx'} >.docx</MenuItem>
-                        <MenuItem value={'.txt'} >.txt</MenuItem>
-                    </Select>
                     <Box mt="2rem">
                         <Button 
                             style={{

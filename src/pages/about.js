@@ -1,8 +1,8 @@
 import React from 'react';
 import config from '../../config';
-import Slide from '@material-ui/core/Slide';
+import Slide from '@mui/material/Slide';
 import Modal from '../components/Modal'
-import { Box } from '@material-ui/core';
+import Box from '@mui/material/Box';
 import { Link } from "gatsby"
 
 export default function About() {

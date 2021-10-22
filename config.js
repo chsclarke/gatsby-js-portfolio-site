@@ -2,7 +2,7 @@ module.exports = {
   // ========================================
   // ====== General site configuration ======
   // ========================================
-  siteTitle: 'About Chase Clarke',            // <title>
+  siteTitle: 'Chase Clarke',            // <title>
   manifestName: 'Resume',
   manifestShortName: 'Landing',               // max 12 characters
   manifestStartUrl: '/',
@@ -56,14 +56,31 @@ module.exports = {
     {
       title: 'SOFTWARE ENGINEER',
       icon: 'work',                           // Options: work or education
-      dateRange: 'August 2020 - Present',
-      bioShort: 'VMware',
+      dateRange: 'November 2021 – Present',
+      bioShort: 'VMware – Engineering Operations',
       bioLong: [
         {
-          paragraph: `• Working on the Partner Products team to redesign and maintain a command-line based CI/CD pipeline for key partners to edit and build redacted versions of VMware's Hypervisor code.`
+          paragraph: `• Currently Working to build a service that tests newly submitted p4 changesets on ESXi’s (VMware Hypervisor) main branch. Upon completion, a dashboard will be presented that details statistics about the build and test successes and failures.`
         },
         {
-          paragraph: `• Technology used to complete the project includes Golang, Python, Bash, Docker, Nginx, HTTPS, SAML2, Linux.`
+          paragraph: `• The primary goal of this service is to test for and identify build time regressions in order to find and back out problematic p4 changesets. Builds on main are incremental–meaning that components from previous builds are recycled in future builds. Problematic components on main need to be manually identified before changesets can be backed out, hence the motivation for this project.`
+        },
+      ],
+    },
+    {
+      title: 'SOFTWARE ENGINEER',
+      icon: 'work',                           // Options: work or education
+      dateRange: 'August 2020 to November 2021',
+      bioShort: 'VMware – Partner Engineering',
+      bioLong: [
+        {
+          paragraph: `• Assisted in developing features for a secure Intel-VMware remote build pipeline that enabled Intel to edit, build, and test redacted ESXi code (VMware Hypervisor) across corporate networks.`
+        },
+        {
+          paragraph: `• Within six months I became the primary maintainer of the build pipeline and spearheaded a redesign from non-containerized code to micro-service based architecture. Held primary responsibility for submission of new architecture to the VMware security team for review. Finally, held primary responsibility for the roll-out of new architecture to Intel. Service no longer has a full time maintainer.`
+        },
+        {
+          paragraph: `• Technology used to complete the redesign includes: Kubernetes/Docker/GitLab, Golang Client/Server CLI on front-end. LXD/Ubuntu/Python compiler for ESXi on back-end.`
         },
       ],
     },

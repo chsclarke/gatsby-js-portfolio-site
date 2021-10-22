@@ -53,7 +53,6 @@ export default function SimpleModal() {
   const body = (
     <div style={modalStyle} className={classes.paper}>
       <div className="subheading text-primary" id="simple-modal-title">Export Resume</div>   
-      <p>Please select your prefered resume format.</p>    
       <Dropdown/>
     </div>
   );
