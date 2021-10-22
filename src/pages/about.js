@@ -1,7 +1,7 @@
 import React from 'react';
 import config from '../../config';
 import Slide from '@mui/material/Slide';
-import Modal from 'src/components/Modal'
+import Modal from '../components/Modal'
 import Box from '@mui/material/Box';
 import { Link } from "gatsby"
 
