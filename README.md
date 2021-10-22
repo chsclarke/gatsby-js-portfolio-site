@@ -1,105 +1,51 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# gatsby-js-portfolio-site
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+This repo is meant to be a quick, **free** (you might have to buy a domain–mine cost $12 per year), and easy to deploy resume website builder. The webiste is fully built, configred, and ready to be deployed. All **you** have to do is edit the config.js file to see this site become your own.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+See a live demo of this code [here](https://www.chaseclarke.com)
 
-## 🚀 Quick start
+## Installation
 
-1.  **Create a Gatsby site.**
+Install Node/npm [here](https://www.npmjs.com/get-npm) if you do not have it on your machine.
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the default starter.
+Use node@12 tested and confiremed as compatible. Node@15 confirmed not compatible.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+The Gatsby CLI is available via npm and should be installed globally by running:
 
-1.  **Start developing.**
+`$ npm install -g gatsby-cli`
 
-    Navigate into your new site’s directory and start it up.
+Create a new site from my starter:
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+`$ gatsby new my-resume-site https://github.com/chsclarke/gatsby-js-portfolio-site`
 
-1.  **Open the source code and start editing!**
+`$ cd my-resume-site`
 
-    Your site is now running at `http://localhost:8000`!
+Install dependencies:
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-5/#introducing-graphiql)._
+`$ npm install`
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+Start the development mode for Gatsby:
 
-## 🚀 Quick start (Gatsby Cloud)
+`$ gatsby develop`
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+Open up a new tab in your browser and navigate to http://localhost:8000/
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-default)
+Congrats! This is the beginning of your very first Gatsby resume site! 🎉
 
-## 🧐 What's inside?
+## Customization
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+All of the content on this website is controlled by [config.js](https://github.com/chsclarke/gatsby-js-portfolio-site/blob/master/config.js). You can edit anything and everything there.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+Please add your own resumes and avatar photo to `/static`. Update the filenames in `config.js`.
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+To modify the colors of the site, go to `src/assets/sass/_variables.scss.` I will add this to config.js soon.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+A great resource to build your resume in all theses filetypes is www.resume.io. You can do a $2 free trial.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## Deployment
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+You will want to purchase a domain for this step. I reccomend the format firstname + lastname + .com OR firstname + middle inital + lastname + .com OR some variant. I used domains.google to purchase it.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-browser/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+I used [netlify](https://www.netlify.com/) to host my site. Its incredibly fast and easy, and the hosting free tier is more than sufficient for a personal site.
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.com/docs/reference/config-files/gatsby-ssr/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/products/cloud/)
-
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+Just follow the link, sign in with your github account, and give Netlify permission to access your repo. Netlify will take care of the rest. With every following push to your main branch, netlify will update your live site in minuets. Its a great CI/CD tool!
