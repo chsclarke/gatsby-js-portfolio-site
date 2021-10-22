@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: `https://chaseclarke.com`,
   },
   plugins: [
+    `gatsby-plugin-root-import`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     'gatsby-plugin-offline',
