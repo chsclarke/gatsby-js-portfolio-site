@@ -28,7 +28,7 @@ export default function About() {
           {config.biography}
           </p>
           <p className="lead mb-5">
-          This site is built as a service. Source <Link to="https://github.com/chsclarke/gatsby-js-portfolio-site">here</Link>.
+          I build this resume site as a service. Source <Link to="https://github.com/chsclarke/gatsby-js-portfolio-site">here</Link>.
           </p>
           </div>
           </div>
