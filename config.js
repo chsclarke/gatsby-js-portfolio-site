@@ -56,7 +56,7 @@ module.exports = {
     {
       title: 'SOFTWARE ENGINEER',
       icon: 'work',                           // Options: work or education
-      dateRange: 'November 2021 – Present',
+      dateRange: 'September 2021 – Present',
       bioShort: 'VMware – Engineering Operations',
       bioLong: [
         {
@@ -70,7 +70,7 @@ module.exports = {
     {
       title: 'SOFTWARE ENGINEER',
       icon: 'work',                           // Options: work or education
-      dateRange: 'August 2020 to November 2021',
+      dateRange: 'August 2020 to September 2021',
       bioShort: 'VMware – Partner Engineering',
       bioLong: [
         {
